@@ -3,6 +3,11 @@
   padding-bottom: 120px;
 }
 
+#bicicleta .bicicletas {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
 .bicicletas h2 {
   margin-bottom: 40px;
 }
@@ -56,5 +61,17 @@
 @media (max-width: 900px) {
   .bicicletas-lista {
     gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas {
+    padding-bottom: 90px;
+  }
+  .bicicletas-lista li {
+    min-width: 240px;
+  }
+  .bicicletas-lista li img {
+    max-height: 260px;
   }
 }

@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 600px;
 }
 
 img {
@@ -17,7 +16,8 @@ h1,
 h2,
 h3,
 p,
-blockquote {
+blockquote,
+dd {
   margin: 0;
   padding: 0;
 }

@@ -20,6 +20,7 @@
 
 .header-menu a {
   padding: 16px 0;
+  position: relative;
 }
 
 .header-menu a::after {
@@ -27,7 +28,7 @@
   content: "";
   display: block;
   background-color: var(--cor-0);
-  height: 3px;
+  height: 2px;
   width: 0%;
   transition: 0.25s;
 }

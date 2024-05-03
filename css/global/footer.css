@@ -1,0 +1,85 @@
+.footer-bg {
+  background-color: var(--cor-12);
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.footer {
+  display: grid;
+  box-sizing: border-box;
+  gap: 40px;
+  grid-template-columns: 3fr 5fr 4fr;
+  align-items: start;
+}
+
+.footer a:hover {
+  color: var(--cor-8);
+  transition: 1ms;
+}
+
+.footer-contato,
+.footer-informacoes {
+  display: grid;
+  gap: 32px;
+}
+
+.footer-contato-lista {
+  display: grid;
+  gap: 8px;
+  position: relative;
+}
+
+.footer-contato-lista::after {
+  content: "";
+  background-color: var(--cor-10);
+  display: block;
+  width: 10%;
+  height: 2px;
+  position: absolute;
+  bottom: -18px;
+}
+
+.footer-redes-lista {
+  display: flex;
+  gap: 32px;
+  margin: 12px 0;
+}
+
+.footer-redes-lista a:hover {
+  transform: scale(1.175);
+}
+
+.footer-informacoes-navegacao {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-copy {
+  grid-column: 1/-1;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer > img {
+    grid-column: 1/-1;
+    width: 40%;
+  }
+
+  .footer-informacoes-navegacao a {
+    display: inline-block;
+    padding: 10px 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer > img {
+    display: none;
+  }
+}

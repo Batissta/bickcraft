@@ -1,0 +1,137 @@
+.bicicleta-bg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#bicicletas .titulo-bg h1::after {
+  display: none;
+}
+
+.bg-black {
+  background-color: var(--cor-11);
+  box-shadow: inset 25vw 0 var(--cor-0);
+}
+
+#bicicletas .bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bicicleta-image {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bicicleta-image span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: var(--cor-12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+.bicicleta-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicleta-content h2,
+.bicicleta-content p {
+  grid-column: 1/-1;
+}
+
+.bicicleta-content h2 {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.bicicleta-content h2::before {
+  content: "";
+  display: block;
+  background-color: var(--cor-p2);
+  width: 12px;
+  height: 8px;
+  margin-bottom: 6px;
+}
+
+.bicicleta-content h2::after {
+  content: "";
+  display: block;
+  background: url("../../img/dec/top-right.svg") no-repeat;
+  width: 60px;
+  height: 70px;
+
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+.bicicleta-content p {
+  margin-bottom: 22px;
+}
+
+.bicicletas-vantagens-lista {
+  display: grid;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+
+.bicicletas-vantagens-lista li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.bicicletas-vantagens-lista li img {
+  width: 24px;
+}
+
+.bicicleta-btn {
+  place-self: end;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bicicleta-btn::after {
+  content: "";
+  background: url("../../img/icones/seta.svg") no-repeat;
+
+  display: block;
+  width: 18px;
+  height: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+.bicicleta-btn:hover::after {
+  transform: translateX(6px);
+}
+
+@media (max-width: 920px) {
+  .bg-black {
+    background-color: var(--cor-11);
+    box-shadow: none;
+  }
+  #bicicletas .bicicleta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-content {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-content h2::after {
+    display: none;
+  }
+  .bicicleta-btn {
+    place-self: start;
+  }
+}

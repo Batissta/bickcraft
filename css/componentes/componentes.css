@@ -80,16 +80,8 @@
   position: relative;
 }
 
-.titulo-bg h1::after {
-  content: "";
-  display: block;
-  background: url("../../img/dec/top-right.svg") no-repeat;
-  width: 60px;
-  height: 60px;
-
-  position: absolute;
-  right: 0;
-  bottom: 5px;
+.titulo {
+  background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
 }
 
 .titulo p {

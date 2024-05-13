@@ -10,21 +10,24 @@
 .pergunta {
   padding: 20px;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .pergunta:nth-child(odd) {
   background-color: var(--cor-1);
 }
 
-.pergunta dt {
+.pergunta button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 8px;
   align-items: center;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: start;
 }
 
-.pergunta dt::before {
+.pergunta button::before {
   content: "";
   display: block;
 
@@ -33,7 +36,7 @@
   height: 8px;
 }
 
-.pergunta dt::after {
+.pergunta button::after {
   content: "";
   display: block;
 
@@ -43,16 +46,20 @@
   transition: 0.4s;
 }
 
-.pergunta:hover dt::after {
+.pergunta:hover button::after,
+.pergunta button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
-.pergunta dd {
+.js .pergunta dd {
+  display: none;
   padding-top: 12px;
   padding-left: 20px;
   max-width: 80ch;
 }
-
+.js .pergunta dd.ativa {
+  display: block;
+}
 @media (max-width: 800px) {
   .perguntas-frequentes {
     padding-top: 50px;

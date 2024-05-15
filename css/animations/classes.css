@@ -1,0 +1,46 @@
+.in200 {
+  animation-duration: 0.2s;
+}
+.in300 {
+  animation-duration: 0.3s;
+}
+.in400 {
+  animation-duration: 0.4s;
+}
+.in600 {
+  animation-duration: 0.6s;
+}
+.in800 {
+  animation-duration: 0.8s;
+}
+.in1000 {
+  animation-duration: 1s;
+}
+.in1200 {
+  animation-duration: 1.2s;
+}
+
+.fadeInTop {
+  animation-name: fadeInTop;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.view {
+  animation-timeline: view();
+  animation-range: cover -10% cover 35%;
+}
+
+.d200 {
+  animation-delay: 0.2s;
+}
